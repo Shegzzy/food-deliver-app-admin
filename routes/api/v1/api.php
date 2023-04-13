@@ -54,6 +54,7 @@ Route::group(['namespace' => 'Api\V1'], function () {
             Route::put('payment-method', 'OrderController@update_payment_method');
         });
             });
+
             
         Route::group(['prefix' => 'config'], function () {
         Route::get('/', 'ConfigController@configuration');
